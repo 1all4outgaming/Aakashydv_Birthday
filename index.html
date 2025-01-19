@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monu Happy birthday</title>
+    <link rel="shortcut icon" href="/Image/insatgram-monu-dp.jpg" type="image/x-icon">
+    <style>
+      /* --Language-Import-- */
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      /* --Language-Imported-- */
+      /* --------------------------------- */
+      /* univirsal-selector */
+      * {
+        font-family: "Poppins", serif;
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+      }
+      /* ----------------------------------------- */
+      /* header-styles */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        background-color: #333;
+        padding-bottom: 10px;
+      }
+      body{
+        background-color: grey;
+      }
+
+      /* website-name-and-image */
+      .web-name h1 {
+        margin-left: 0.1rem;
+        color: white;
+      }
+      .web-name {
+        display: flex;
+        align-items: center;
+      }
+      .web-menu ul{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        text-decoration: none;
+      }
+      .web-menu a{
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem;
+
+      }
+      .web-name h1:hover{
+        color: #ff5722;
+        transition: 1.5s ease-in-out;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+      }
+      .web-name h1:active{
+        transform: translateY(-3px);
+        color: #ff5722;
+        transform: translateY(5px);
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+      }
+      .web-menu a:hover{
+        color: #ff5722;
+        transition: 1.5s ease-in-out;
+        transform: translateY(5px);
+      }
+      .web-name img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        transition: box-shadow 0.3s ease;
+      }
+      .web-name img:hover{
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+      }
+      .web-name h1{
+        animation: bounce 1s infinite;
+      }
+      @keyframes bounce {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      /* -- Main Section Styling -- */
+      /* -- Main Section Styling -- */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  background: linear-gradient(45deg, #ff5722, #ff9800);
+  position: relative;
+  overflow: hidden;
+  animation: backgroundMove 10s linear infinite;
+}
+
+/* -- Birthday Banner Styling -- */
+.birthday-banner {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  animation: bannerAnimate 1.5s ease-out forwards; /* Faster animation */
+}
+
+/* -- Banner Heading Animation -- */
+.banner-content h1 {
+  font-size: 3rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards; /* Faster fade-in */
+  animation-delay: 0.5s;
+}
+
+/* -- Sub Heading Animation -- */
+.inspiration {
+  font-size: 1.3rem;
+  color: #666;
+  font-weight: 400;
+  margin: 20px 0;
+  opacity: 0;
+  animation: slideUp 0.8s ease-in-out forwards; /* Speeding up the slide effect */
+  animation-delay: 1s;
+}
+
+/* -- Date and Message Styling -- */
+.date {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin: 15px 0;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards; /* Faster fade-in */
+  animation-delay: 1.5s;
+}
+
+.birthday-banner p {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 500;
+  margin: 5px 0;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+.birthday-banner p strong {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff5722;
+}
+
+/* -- Keyframe Animations -- */
+
+/* Banner animation */
+@keyframes bannerAnimate {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Fade-in animation for the text */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade-in-up animation for the header */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide-up animation for subheadings */
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* -- Background Animation for Main Section -- */
+@keyframes backgroundMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* -- Button Hover Effects -- */
+button {
+  padding: 12px 24px;
+  border: none;
+  background-color: #ff5722;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #e64a19;
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+
+/* -- Faster Animation for Content Reveal -- */
+@keyframes contentReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main {
+  animation: backgroundMove 10s linear infinite;
+}
+
+/* -- Responsive Design for Phone -- */
+@media (max-width: 768px) {
+  .birthday-banner {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .birthday-banner h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner-content p {
+    font-size: 1rem;
+  }
+
+  .inspiration {
+    font-size: 1.1rem;
+  }
+
+  .date {
+    font-size: 1.2rem;
+  }
+}
+
+/* -- Responsive Design for Small Screens (Mobile) -- */
+@media (max-width: 480px) {
+  .birthday-banner {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .birthday-banner h1 {
+    font-size: 2rem;
+  }
+
+  .inspiration {
+    font-size: 1rem;
+  }
+
+  .date {
+    font-size: 1.1rem;
+  }
+
+  .banner-content p {
+    font-size: 0.9rem;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="web-name">
+        <img src="/Image/insatgram-monu-dp.jpg" height="60" />
+        <h1>Aakashydv</h1>
+      </div>
+      <div class="web-menu">
+        <nav>
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/sareef_yadav_001/" target="_blank">Instagram</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      
+    </header>
+    <main>
+      <div class="birthday-banner">
+        <div class="banner-content">
+          <h1>🎉 Happy Birthday Monu! 🎂</h1>
+          <p class="inspiration">💫 Jo hasi se room ko roshan kare aur dil se sabka favorite inspiration —</p>
+          <p><strong>🎈 Janamdin mubarak ho, Monu! 🎈</strong></p>
+          <p class="date">24th January 2010 🎉</p>
+          <p>🔥 Bas swag kar aur maze le aaj ke din! 🔥</p>
+        </div>
+      </div>
+      
+    </main>
+  </body>
+</html>
